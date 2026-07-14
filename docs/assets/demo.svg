@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420" font-family="Menlo, Consolas, monospace" font-size="14">
+  <rect width="760" height="420" rx="10" fill="#101418"/>
+  <circle cx="24" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="22" r="6" fill="#27c93f"/>
+  <text x="380" y="27" fill="#8b949e" text-anchor="middle" font-size="12">packbench — your data, all codecs, one deterministic report</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#7ee787">$</tspan> packbench run --price 0.023 /srv/data</text>
+    <text x="24" y="88" fill="#8b949e" font-size="12">packbench 0.1.0 — 3 files scanned (4.1 GiB); sampled 1 file (64.0 MiB), seed 1</text>
+    <text x="24" y="110" fill="#8b949e" font-size="12">cost: $0.0230 per GiB-month, projected onto the full 4.1 GiB corpus</text>
+    <text x="24" y="144" fill="#d2a8ff">CODEC          SIZE   RATIO  SAVED  COMP MB/s  USD/MO  SAVE/MO</text>
+    <text x="24" y="168">xz:6        <tspan fill="#79c0ff">2.1 MiB</tspan>  0.0325  <tspan fill="#7ee787">96.7%</tspan>        0.4   $0.00    <tspan fill="#7ee787">$0.09</tspan></text>
+    <text x="24" y="190">zstd:19     <tspan fill="#79c0ff">3.2 MiB</tspan>  0.0498  <tspan fill="#7ee787">95.0%</tspan>        0.2   $0.00    <tspan fill="#7ee787">$0.09</tspan></text>
+    <text x="24" y="212">bzip2:9     <tspan fill="#79c0ff">4.2 MiB</tspan>  0.0654  <tspan fill="#7ee787">93.5%</tspan>        2.6   $0.01    <tspan fill="#7ee787">$0.09</tspan></text>
+    <text x="24" y="234">gzip:9      <tspan fill="#79c0ff">6.6 MiB</tspan>  0.1033  <tspan fill="#7ee787">89.7%</tspan>        5.1   $0.01    <tspan fill="#7ee787">$0.08</tspan></text>
+    <text x="24" y="256">zstd:3      <tspan fill="#79c0ff">8.1 MiB</tspan>  0.1259  <tspan fill="#7ee787">87.4%</tspan>      233.7   $0.01    <tspan fill="#7ee787">$0.08</tspan></text>
+    <text x="24" y="278">lz4:1      <tspan fill="#79c0ff">13.4 MiB</tspan>  0.2094  <tspan fill="#7ee787">79.1%</tspan>      292.8   $0.02    <tspan fill="#7ee787">$0.07</tspan></text>
+    <text x="24" y="300">store      <tspan fill="#79c0ff">64.0 MiB</tspan>  1.0000   0.0%      391.6   <tspan fill="#f85149">$0.09</tspan>    $0.00</text>
+    <text x="24" y="338">best ratio    <tspan fill="#f778ba">xz:6</tspan></text>
+    <text x="24" y="360">fastest       <tspan fill="#f778ba">lz4:1</tspan></text>
+    <text x="24" y="382">balanced      <tspan fill="#f778ba">lz4:1</tspan>   <tspan fill="#8b949e">(most bytes shed per CPU-second)</tspan></text>
+    <text x="24" y="408" fill="#8b949e">every row round-trip verified · byte-identical with --no-timing</text>
+  </g>
+</svg>
